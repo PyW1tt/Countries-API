@@ -87,7 +87,7 @@ function HomePage() {
         Where in the world?
       </nav>
       <section className=" max-w-screen-2xl mx-auto px-5 ">
-        <div className="mt-5 flex">
+        <div className="mt-5 flex max-md:flex-col">
           <DebounceInput
             minLength={2}
             value={search}
@@ -100,7 +100,7 @@ function HomePage() {
             placeholder="Search for a country name"
           />
           <select
-            className="w-[20%] bg-slate-600 rounded-sm px-5 py-2 border border-black ml-3"
+            className="w-[20%] bg-slate-600 rounded-sm px-5 py-2 border border-black ml-3 max-sm:w-full max-md:mt-3 max-md:ml-0"
             onChange={(e) => {
               setSearch("");
               setRegion(e.target.value);
