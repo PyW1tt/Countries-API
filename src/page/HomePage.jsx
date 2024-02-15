@@ -64,7 +64,6 @@ function HomePage() {
         `https://restcountries.com/v3.1/region/${region}`
       );
       setData(result.data);
-      console.log(result.data);
       setLoading(false);
     } catch (error) {
       console.log(error);

@@ -17,7 +17,6 @@ function CountryName() {
         `https://restcountries.com/v3.1/name/${param.name}`
       );
       setCountry(result.data);
-      console.log(result.data[0]);
       setLoading(false);
     } catch (error) {
       console.log(error);
