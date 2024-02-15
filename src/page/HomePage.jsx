@@ -104,7 +104,6 @@ function HomePage() {
             onChange={(e) => {
               setSearch("");
               setRegion(e.target.value);
-              console.log(e.target.value);
             }}
           >
             {regions.map((region, index) => {
